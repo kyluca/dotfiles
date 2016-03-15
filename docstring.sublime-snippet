@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+    """
+    Return something
+
+    :param arg:
+    :return:
+    """
+]]></content>
+    <tabTrigger>docstring</tabTrigger>
+</snippet>
