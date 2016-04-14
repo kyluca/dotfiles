@@ -112,10 +112,17 @@ alias gp='git plog'
 alias guvn='git cm "Update version number between releases"'
 alias cdp='cd ~/projects'
 alias pir='pip install -r requirements.txt'
+alias pup='pip install -U pip'
 alias nh='nautilus .'
+alias trw='tmux rename-window'
+alias psd='python setup.py develop'
+alias sar='sudo /etc/init.d/apache2 restart'
 
 # stupid scaling for Atom
 alias atom='atom --force-device-scale-factor=1'
+
+# typo catcher
+alias pyhton='python'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -150,6 +157,8 @@ export GUROBI_HOME="/opt/gurobi650/linux64"
 export PATH="${PATH}:${GUROBI_HOME}/bin"
 export LD_LIBRARY_PATH="${GUROBI_HOME}/lib"
 
+# v4l2-ctl --set-fmt-video=width=1280,height=720,pixelformat='YUYV'
+
 git_branch() {
 git branch 2> /dev/null | awk '/\*/ { printf $2 }'
 }
@@ -173,4 +182,5 @@ White=$'\e[1;37m'
 
 export PS1='${Cyan}\u@\h ${LGray}in ${Green}\w ${LGray}on ${Brown}$(git_branch)${LGray} @ ${DGray}\t${LGray}\n$ '
 
-[[ $TERM != "screen" ]] && exec tmux
+# [[ $TERM != "screen" ]] && exec tmux
+[[ $TERM != "screen" ]] && exec tmuxp load ~/.tmuxp/0.json
