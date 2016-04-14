@@ -21,7 +21,7 @@
     fe = fetch
     aa = add --all
     ap = add --all -p
-    amc = commit --amend -m
+    cma = commit --amend -m
     rf = checkout --
 [push]
 	default = simple
