@@ -1,0 +1,10 @@
+[
+    { "keys": ["ctrl+alt+["], "command": "fold" },
+    { "keys": ["ctrl+alt+]"], "command": "unfold" },
+    { "keys": ["ctrl+shift+["], "command": "fold_all" },
+    { "keys": ["ctrl+shift+]"], "command": "unfold_all" },
+    { "keys": ["ctrl+alt+u"], "command": "diff_changes" },
+    { "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
+    { "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 5.0 } },
+    { "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -5.0 } },
+]
