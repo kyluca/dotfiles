@@ -98,7 +98,7 @@ alias sb='source ~/.bashrc'
 alias sub='subl ~/.bashrc'
 alias sug='subl ~/.gitconfig'
 alias pt='py.test -vvvs'
-alias ptc='py.test -vvvs --cov=. --cov-report=html'
+alias ptc='py.test -vvvs --cov=. --cov-report=html --cov-config=tox.ini'
 alias ptv='py.test -vvv'
 alias untarbzip='tar -xjvf'
 alias untargzip='tar -xzvf'
@@ -110,13 +110,19 @@ alias gn='git nlog 15'
 alias gna='git nlog 15 --all'
 alias gp='git plog'
 alias guvn='git cm "Update version number between releases"'
+alias gurn='git cm "Update release notes"'
 alias cdp='cd ~/projects'
+alias pie='pip install -e .'
 alias pir='pip install -r requirements.txt'
+alias pirt='pip install -r requirements-test.txt'
 alias pup='pip install -U pip'
 alias nh='nautilus .'
 alias trw='tmux rename-window'
 alias psd='python setup.py develop'
 alias sar='sudo /etc/init.d/apache2 restart'
+alias tkw='tmux kill-window -t'
+alias tks='tmux kill-session -t'
+alias kbb='echo 0 | sudo tee -a /sys/class/leds/smc::kbd_backlight/brightness'
 
 # stupid scaling for Atom
 alias atom='atom --force-device-scale-factor=1'
@@ -182,5 +188,6 @@ White=$'\e[1;37m'
 
 export PS1='${Cyan}\u@\h ${LGray}in ${Green}\w ${LGray}on ${Brown}$(git_branch)${LGray} @ ${DGray}\t${LGray}\n$ '
 
-# [[ $TERM != "screen" ]] && exec tmux
-[[ $TERM != "screen" ]] && exec tmuxp load ~/.tmuxp/0.json
+# [[ $TERM != "screen" ]] && exec tmuxp load path/to/yaml/files
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

@@ -23,6 +23,7 @@
     ap = add --all -p
     cma = commit --amend -m
     rf = checkout --
+    psu = push --set-upstream origin
 [push]
 	default = simple
 [color]
