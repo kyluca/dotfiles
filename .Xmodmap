@@ -1,0 +1,11 @@
+! clear current control keys
+clear control
+
+! set left control back to left control
+keycode  37 = Control_L
+
+! set right super to right control
+keycode 134 = Control_R
+
+! update control keys
+add control = Control_L Control_R
