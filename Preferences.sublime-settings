@@ -1,36 +1,40 @@
 {
-    "always_show_minimap_viewport": true,
-    "auto_complete_commit_on_tab": true,
-    "bold_folder_labels": true,
+	"always_show_minimap_viewport": true,
+	"auto_complete_commit_on_tab": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/MonoKairu.tmTheme",
+	"draw_minimap_border": true,
+	"font_face": "FiraMono",
+	"font_options":
+	[
+		"subpixel_antialias",
+		"gray_antialias"
+	],
+	"font_size": 10,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Djaneiro",
+		"Material Theme - Appbar",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal"
+	],
+	"indent_to_bracket": true,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"material_theme_accent_cyan": true,
+	"material_theme_appbar_cyan": true,
+	"material_theme_tree_headings": true,
+	"overlay_scroll_bars": "enabled",
+	"preview_on_click": false,
+	"rulers":
+	[
+		120
+	],
     "theme": "Material-Theme-Darker.sublime-theme",
-    "color_scheme": "Packages/User/MonoKairu.tmTheme",
-    // "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
-    "draw_minimap_border": true,
-    // "font_face": "Monospace",
-    "font_face": "FiraMono",
-    "font_options": [
-        "subpixel_antialias",
-        "gray_antialias",
-    ],
-    "font_size": 10,
-    "highlight_modified_tabs": true,
-    "ignored_packages": [
-        "Djaneiro",
-        "Vintage"
-    ],
-    "indent_guide_options": [
-        "draw_normal",
-    ],
-    "indent_to_bracket": true,
-    "preview_on_click": false,
-    "rulers": [
-        120
-    ],
-    "translate_tabs_to_spaces": true,
-    "tree_animation_enabled": false,
-
-    // Material suggested options
-    "overlay_scroll_bars": "enabled",
-    "line_padding_top": 1,
-    "line_padding_bottom": 1,
+	"translate_tabs_to_spaces": true,
+	"tree_animation_enabled": false
 }
