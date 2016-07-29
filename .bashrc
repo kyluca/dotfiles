@@ -100,6 +100,8 @@ alias sug='subl ~/.gitconfig'
 alias pt='py.test -vvvs'
 alias ptc='py.test -vvvs --cov=. --cov-report=html --cov-config=tox.ini'
 alias ptv='py.test -vvv'
+alias ptl='py.test -vvvs --tb=line'
+alias ptt='py.test'
 alias untarbzip='tar -xjvf'
 alias untargzip='tar -xzvf'
 alias h5='head -n 50'
@@ -123,9 +125,10 @@ alias sar='sudo /etc/init.d/apache2 restart'
 alias tkw='tmux kill-window -t'
 alias tks='tmux kill-session -t'
 alias kbb='echo 0 | sudo tee -a /sys/class/leds/smc::kbd_backlight/brightness'
+alias edbl='export $(dbus-launch)'
 
 # stupid scaling for Atom
-alias atom='atom --force-device-scale-factor=1'
+# alias atom='atom --force-device-scale-factor=1'
 
 # typo catcher
 alias pyhton='python'
@@ -165,6 +168,9 @@ export LD_LIBRARY_PATH="${GUROBI_HOME}/lib"
 
 # v4l2-ctl --set-fmt-video=width=1280,height=720,pixelformat='YUYV'
 
+# remap keys with xmodmap
+xmodmap ~/.Xmodmap
+
 git_branch() {
 git branch 2> /dev/null | awk '/\*/ { printf $2 }'
 }
@@ -186,7 +192,11 @@ LPurple=$'\e[1;35m'
 LCyan=$'\e[1;36m'
 White=$'\e[1;37m'
 
-export PS1='${Cyan}\u@\h ${LGray}in ${Green}\w ${LGray}on ${Brown}$(git_branch)${LGray} @ ${DGray}\t${LGray}\n$ '
+export PS1_default='${Cyan}\u@\h ${LGray}in ${Green}\w ${LGray}on ${Brown}$(git_branch)${LGray} @ ${DGray}\t${LGray}\n$ '
+export PS1_train='${Cyan}\u@\h ${LGray}on ${Brown}$(git_branch)${LGray} @ ${DGray}\t${LGray}\n$ '
+alias ps1_default="export PS1="\$PS1_default""
+alias ps1_train="export PS1="\$PS1_train""
+ps1_default
 
 # [[ $TERM != "screen" ]] && exec tmuxp load path/to/yaml/files
 
