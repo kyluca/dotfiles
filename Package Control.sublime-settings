@@ -1,0 +1,33 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"BufferScroll",
+		"Dictionaries",
+		"Djaneiro",
+		"GenerateUUID",
+		"Git",
+		"GitGutter",
+		"GraphvizPreview",
+		"Markdown Preview",
+		"Material Theme",
+		"Material Theme - Appbar",
+		"Package Control",
+		"PackageResourceViewer",
+		"requirementstxt",
+		"SideBarEnhancements",
+		"SnippetMaker",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
+		"SublimeLinter-json",
+		"SublimeLinter-rubocop",
+		"Text Pastry",
+		"Vintageous",
+		"Virtualenv"
+	]
+}

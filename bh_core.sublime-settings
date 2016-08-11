@@ -1,0 +1,10 @@
+{
+    "bracket_styles": {
+        "default": {
+            "icon": "dot",
+            // "color": "brackethighlighter.default",
+            "color": "#66D9EF",
+            "style": "underline"
+        }
+    }
+}
