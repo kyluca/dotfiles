@@ -3,6 +3,7 @@
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/MonoKairu.tmTheme",
+	"dictionary": "Packages/Dictionaries/English (Australian).dic",
 	"draw_minimap_border": true,
 	"font_face": "FiraMono",
 	"font_options":
@@ -16,7 +17,8 @@
 	[
 		"Djaneiro",
 		"Material Theme - Appbar",
-		"Vintage"
+		"Vintage",
+		"Vintageous"
 	],
 	"indent_guide_options":
 	[
@@ -27,6 +29,7 @@
 	"line_padding_top": 1,
 	"material_theme_accent_cyan": true,
 	"material_theme_appbar_cyan": true,
+	"material_theme_compact_sidebar": true,
 	"material_theme_tree_headings": true,
 	"overlay_scroll_bars": "enabled",
 	"preview_on_click": false,
@@ -34,7 +37,7 @@
 	[
 		120
 	],
-    "theme": "Material-Theme-Darker.sublime-theme",
+	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false
 }

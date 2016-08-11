@@ -12,12 +12,24 @@
                 "args": [],
                 "builtins": "",
                 "excludes": [],
+                "executable": "",
                 "ignore": "E303,W292,W391,F403",
                 "jobs": "1",
                 "max-complexity": -1,
                 "max-line-length": 120,
                 "select": "",
                 "show-code": false
+            },
+            "json": {
+                "@disable": false,
+                "args": [],
+                "excludes": [],
+                "strict": true
+            },
+            "rubocop": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
             }
         },
         "mark_style": "stippled underline",
