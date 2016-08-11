@@ -1,0 +1,14 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+@pytest.fixture
+def _fixture():
+    pass
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ptf</tabTrigger>
+  <description>Pytest Fixture</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.python, meta.function.decorator.python, entity.name.function.decorator.python</scope>
+</snippet>
