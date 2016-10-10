@@ -91,7 +91,9 @@ alias l='ls -CF'
 alias lt='ls -ahltFr'
 alias lr='ls -ahlFR'
 alias cr='cp -r'
-alias rma='rm -rf'
+alias rma='rm -rfv'
+alias rmac='rma $(find -name *.pyc -or -name *pycache*) .cache ./build ./dist ./env'
+alias rmab='rma $(find -name ".tox" -or -name "env" -or -name "env_container" -or -name "build" -or -name "dist" | grep -vE "boost|Compose|footprinter|memegen")'
 alias gr='grep -rn'
 alias dw='deactivate'
 alias sb='source ~/.bashrc'
@@ -102,6 +104,7 @@ alias ptc='py.test -vvvs --cov=. --cov-report=html --cov-config=tox.ini'
 alias ptv='py.test -vvv'
 alias ptl='py.test -vvvs --tb=line'
 alias ptt='py.test'
+alias ptx='py.test -vvvs --runxfail'
 alias untarbzip='tar -xjvf'
 alias untargzip='tar -xzvf'
 alias h5='head -n 50'
@@ -113,19 +116,26 @@ alias gna='git nlog 15 --all'
 alias gp='git plog'
 alias guvn='git cm "Update version number between releases"'
 alias gurn='git cm "Update release notes"'
+alias gput='git push && git push --tags'
 alias cdp='cd ~/projects'
 alias pie='pip install -e .'
 alias pir='pip install -r requirements.txt'
 alias pirt='pip install -r requirements-test.txt'
 alias pup='pip install -U pip'
+alias pcc='pip install -U pip-conflict-checker && pipconflictchecker'
 alias nh='nautilus .'
-alias trw='tmux rename-window'
 alias psd='python setup.py develop'
 alias sar='sudo /etc/init.d/apache2 restart'
+alias trw='tmux rename-window'
+alias tkp='tmux kill-pane -t'
 alias tkw='tmux kill-window -t'
 alias tks='tmux kill-session -t'
 alias kbb='echo 0 | sudo tee -a /sys/class/leds/smc::kbd_backlight/brightness'
 alias edbl='export $(dbus-launch)'
+
+# function for auto window renaming when changing venvs
+workon_trw() { workon "$@"; trw "$@"; }
+alias wtrw='workon_trw'
 
 # stupid scaling for Atom
 # alias atom='atom --force-device-scale-factor=1'
@@ -165,6 +175,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 export GUROBI_HOME="/opt/gurobi650/linux64"
 export PATH="${PATH}:${GUROBI_HOME}/bin"
 export LD_LIBRARY_PATH="${GUROBI_HOME}/lib"
+export CXXFLAGS='-std=c++11'
 
 # v4l2-ctl --set-fmt-video=width=1280,height=720,pixelformat='YUYV'
 
@@ -198,6 +209,6 @@ alias ps1_default="export PS1="\$PS1_default""
 alias ps1_train="export PS1="\$PS1_train""
 ps1_default
 
-# [[ $TERM != "screen" ]] && exec tmuxp load path/to/yaml/files
+# [[ $TERM != "screen-256color" ]] && exec tmuxp load path/to/yaml/files
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
