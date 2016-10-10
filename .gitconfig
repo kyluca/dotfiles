@@ -1,10 +1,12 @@
 [core]
     editor = subl -w
     autocrlf = false
+[log]
+    date = format-local:%F %H:%M
 [alias]
     glog = log --graph --all
-    plog = log --graph --pretty=format:'%C(yellow)%h %Creset%ad %C(cyan)%an%Cgreen%d %Creset%s' --date=short --all
-    nlog = log --graph --pretty=format:'%C(yellow)%h %Creset%ad %C(cyan)%an%Cgreen%d %Creset%s' --date=short -n
+    plog = log --graph --pretty=format:'%C(yellow)%h %Creset%ad %C(cyan)%an%Cgreen%d %Creset%s' --all
+    nlog = log --graph --pretty=format:'%C(yellow)%h %Creset%ad %C(cyan)%an%Cgreen%d %Creset%s' -n
     last = log -1 HEAD
     unstage = reset HEAD --
     uncommit = reset --soft HEAD~1
@@ -25,6 +27,7 @@
     cma = commit --amend -m
     rf = checkout --
     psu = push --set-upstream origin
+    subi = submodule update --init --recursive
 [push]
     default = simple
 [color]
