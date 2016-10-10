@@ -16,6 +16,7 @@
 	"ignored_packages":
 	[
 		"Djaneiro",
+		"Material Theme",
 		"Material Theme - Appbar",
 		"Vintage",
 		"Vintageous"
@@ -25,19 +26,41 @@
 		"draw_normal"
 	],
 	"indent_to_bracket": true,
+	"index_workers": 4,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"material_theme_accent_cyan": true,
-	"material_theme_appbar_cyan": true,
-	"material_theme_compact_sidebar": true,
-	"material_theme_tree_headings": true,
 	"overlay_scroll_bars": "enabled",
 	"preview_on_click": false,
 	"rulers":
 	[
 		120
 	],
-	"theme": "Material-Theme-Darker.sublime-theme",
+	"show_encoding": true,
+	"show_line_endings": true,
+	"theme": "Boxy Monokai.sublime-theme",
+	"theme_accent_cyan": true,
+	"theme_autocomplete_item_selected_colored": true,
+	"theme_bar": true,
+	"theme_bar_colored": false,
+	"theme_bar_logo_atomized": false,
+	"theme_bar_margin_top_lg": true,
+	"theme_button_rounded": true,
+	"theme_font_xs": true,
+	"theme_icons_materialized": true,
+	"theme_sidebar_highlight_selected_text_only": true,
+	"theme_sidebar_highlight_text_only": true,
+	"theme_sidebar_icon_saturation_md": true,
+	"theme_sidebar_indent_md": true,
+	"theme_sidebar_indent_top_level_disabled": true,
+	"theme_size_xs": true,
+	"theme_statusbar_size_xl": true,
+	"theme_tab_highlight_text_only": true,
+	"theme_tab_line_size_lg": true,
+	"theme_tab_selected_label_bold": true,
+	"theme_tab_selected_transparent": true,
+	"theme_tab_selected_underlined": true,
+	"theme_tab_size_xl": true,
+	"theme_tab_width_auto": true,
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false
 }

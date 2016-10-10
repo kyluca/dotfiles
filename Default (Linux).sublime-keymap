@@ -5,8 +5,8 @@
     { "keys": ["ctrl+shift+]"], "command": "unfold_all" },
     { "keys": ["ctrl+alt+u"], "command": "diff_changes" },
     { "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
-    { "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 5.0 } },
-    { "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -5.0 } },
+    { "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 7.0 } },
+    { "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -7.0 } },
     { "keys": ["ctrl+alt+r"], "command": "permute_selection", "args": {"operation": "reverse"} },
 
     // Auto-pair backticks!

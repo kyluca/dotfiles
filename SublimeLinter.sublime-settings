@@ -3,7 +3,7 @@
         "debug": false,
         "delay": 0.25,
         "error_color": "D02000",
-        "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+        "gutter_theme": "Packages/Boxy Theme/extras/SublimeLinter/Boxy.gutter-theme",
         "gutter_theme_excludes": [],
         "lint_mode": "background",
         "linters": {
@@ -13,7 +13,7 @@
                 "builtins": "",
                 "excludes": [],
                 "executable": "",
-                "ignore": "E303,W292,W391,F403",
+                "ignore": "",
                 "jobs": "1",
                 "max-complexity": -1,
                 "max-line-length": 120,
