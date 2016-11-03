@@ -9,7 +9,6 @@
 		"BracketHighlighter",
 		"BufferScroll",
 		"Color Highlighter",
-		"Dictionaries",
 		"Djaneiro",
 		"Dockerfile Syntax Highlighting",
 		"GenerateUUID",
@@ -17,8 +16,6 @@
 		"GitGutter",
 		"GraphvizPreview",
 		"Markdown Preview",
-		"Material Theme",
-		"Material Theme - Appbar",
 		"Package Control",
 		"PackageResourceViewer",
 		"Python Improved",
@@ -33,6 +30,7 @@
 		"SublimeLinter-rubocop",
 		"Text Pastry",
 		"Vintageous",
-		"Virtualenv"
+		"Virtualenv",
+		"zz File Icons"
 	]
 }

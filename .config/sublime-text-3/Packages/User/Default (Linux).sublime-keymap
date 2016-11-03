@@ -7,7 +7,8 @@
     { "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
     { "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 7.0 } },
     { "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -7.0 } },
-    { "keys": ["ctrl+alt+r"], "command": "permute_selection", "args": {"operation": "reverse"} },
+    { "keys": ["super+k"], "command": "scroll_lines", "args": {"amount": 7.0 } },
+    { "keys": ["super+j"], "command": "scroll_lines", "args": {"amount": -7.0 } },
 
     // Auto-pair backticks!
     // Copied from the Default (Linux).sublime-keymap and modified for backticks
