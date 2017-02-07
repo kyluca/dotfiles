@@ -4,6 +4,7 @@
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/MonoKairu.tmTheme",
 	"dictionary": "Packages/Language - English/en_GB.dic",
+	"draw_centered": true,
 	"draw_minimap_border": true,
 	"font_face": "FiraMono",
 	"font_options":

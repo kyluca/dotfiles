@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"Boxy Theme",
 		"BracketHighlighter",
 		"BufferScroll",
@@ -15,6 +16,7 @@
 		"Git",
 		"GitGutter",
 		"GraphvizPreview",
+		"INI",
 		"Markdown Preview",
 		"Package Control",
 		"PackageResourceViewer",
@@ -23,6 +25,7 @@
 		"SideBarEnhancements",
 		"Skins",
 		"SnippetMaker",
+		"Statusbar Path",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-flake8",
@@ -30,7 +33,6 @@
 		"SublimeLinter-rubocop",
 		"Text Pastry",
 		"Vintageous",
-		"Virtualenv",
-		"zz File Icons"
+		"Virtualenv"
 	]
 }

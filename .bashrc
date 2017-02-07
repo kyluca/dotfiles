@@ -89,6 +89,7 @@ alias ll='ls -ahlF'
 alias la='ls -A'
 alias l='ls -CF'
 alias lt='ls -ahltFr'
+alias ltt='lt | tail'
 alias lr='ls -ahlFR'
 alias cr='cp -r'
 alias rma='rm -rfv'
@@ -99,6 +100,7 @@ alias dw='deactivate'
 alias sb='source ~/.bashrc'
 alias sub='subl ~/.bashrc'
 alias sug='subl ~/.gitconfig'
+alias vrc='vim ~/.vimrc'
 alias pt='py.test -vvvs'
 alias ptc='py.test -vvvs --cov=. --cov-report=html --cov-config=tox.ini'
 alias ptv='py.test -vvv'
@@ -130,8 +132,14 @@ alias trw='tmux rename-window'
 alias tkp='tmux kill-pane -t'
 alias tkw='tmux kill-window -t'
 alias tks='tmux kill-session -t'
+alias tlsc='tmux lsc -F "#{session_name} [#{client_width}x#{client_height}] #{client_activity_string}"'
 alias kbb='echo 0 | sudo tee -a /sys/class/leds/smc::kbd_backlight/brightness'
 alias edbl='export $(dbus-launch)'
+alias camera_on='~/repos/bcwc_pcie/lights_camera_action.sh'
+alias camera_off='echo "Removing the facetimehd module..." && sudo modprobe -r facetimehd'
+alias capacity='cat /sys/class/power_supply/BAT0/capacity'
+alias vpn_login='sudo openvpn ~/openvpn/client.ovpn'
+alias less='less -N'
 
 # function for auto window renaming when changing venvs
 workon_trw() { workon "$@"; trw "$@"; }
@@ -176,6 +184,10 @@ export GUROBI_HOME="/opt/gurobi650/linux64"
 export PATH="${PATH}:${GUROBI_HOME}/bin"
 export LD_LIBRARY_PATH="${GUROBI_HOME}/lib"
 export CXXFLAGS='-std=c++11'
+export VISUAL="subl -w"
+export EDITOR="subl -w"
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
 
 # v4l2-ctl --set-fmt-video=width=1280,height=720,pixelformat='YUYV'
 

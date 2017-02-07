@@ -16,3 +16,6 @@ alias pl p_ locals() local:
 # Next and list, and step and list.
 alias nl n;;l
 alias sl s;;l
+
+# Hack to ignore all following breakpoints
+alias stahp ipdb.set_trace = lambda: None; quit();
