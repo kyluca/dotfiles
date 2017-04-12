@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"A File Icon",
+		"AceJump",
 		"Boxy Theme",
 		"BracketHighlighter",
 		"BufferScroll",
@@ -18,11 +19,13 @@
 		"GraphvizPreview",
 		"INI",
 		"Markdown Preview",
+		"Mercurial",
 		"Package Control",
 		"PackageResourceViewer",
 		"Python Improved",
 		"requirementstxt",
 		"SideBarEnhancements",
+		"Six",
 		"Skins",
 		"SnippetMaker",
 		"Statusbar Path",
@@ -32,7 +35,6 @@
 		"SublimeLinter-json",
 		"SublimeLinter-rubocop",
 		"Text Pastry",
-		"Vintageous",
 		"Virtualenv"
 	]
 }

@@ -15,6 +15,7 @@
     { "keys": ["super+shift+l"], "command": "move", "args": {"by": "characters", "forward": true} },
     { "keys": ["super+shift+k"], "command": "move", "args": {"by": "lines", "forward": false} },
     { "keys": ["super+shift+j"], "command": "move", "args": {"by": "lines", "forward": true} },
+    { "keys": ["ctrl+shift+;"], "command": "ace_jump_word" },
 
     // Auto-pair backticks!
     // Copied from the Default (Linux).sublime-keymap and modified for backticks
@@ -51,5 +52,5 @@
             { "key": "selector", "operator": "not_equal", "operand": "punctuation.definition.string.begin", "match_all": true },
             { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double - punctuation.definition.string.end", "match_all": true },
         ]
-    },
+    }
 ]

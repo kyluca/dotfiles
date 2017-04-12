@@ -100,7 +100,7 @@ alias dw='deactivate'
 alias sb='source ~/.bashrc'
 alias sub='subl ~/.bashrc'
 alias sug='subl ~/.gitconfig'
-alias vrc='vim ~/.vimrc'
+alias vrc='vims ~/.vimrc'
 alias pt='py.test -vvvs'
 alias ptc='py.test -vvvs --cov=. --cov-report=html --cov-config=tox.ini'
 alias ptv='py.test -vvv'
@@ -140,6 +140,11 @@ alias camera_off='echo "Removing the facetimehd module..." && sudo modprobe -r f
 alias capacity='cat /sys/class/power_supply/BAT0/capacity'
 alias vpn_login='sudo openvpn ~/openvpn/client.ovpn'
 alias less='less -N'
+alias wttr='curl wttr.in/Brisbane'
+alias vims='vim --servername VIM'
+alias vimr='vim --remote-tab'
+alias gvims='gvim --servername GVIM'
+alias gvimr='gvim --remote-tab'
 
 # function for auto window renaming when changing venvs
 workon_trw() { workon "$@"; trw "$@"; }
@@ -180,7 +185,7 @@ fi
 export WORKON_HOME=~/virtualenv
 source /usr/local/bin/virtualenvwrapper.sh
 
-export GUROBI_HOME="/opt/gurobi650/linux64"
+export GUROBI_HOME="/opt/gurobi700/linux64"
 export PATH="${PATH}:${GUROBI_HOME}/bin"
 export LD_LIBRARY_PATH="${GUROBI_HOME}/lib"
 export CXXFLAGS='-std=c++11'
