@@ -1,0 +1,36 @@
+<!DOCTYPE shortcuts>
+<qgsshortcuts version="1.0" locale="en_AU">
+    <act shortcut="A" name="Add Feature"/>
+    <act shortcut="Ctrl+Shift+B" name="Buffer(s)..."/>
+    <act shortcut="Shift+N" name="Configure Shortcuts..."/>
+    <act shortcut="Shift+C" name="Copy style"/>
+    <act shortcut="D" name="Deselect Features from All Layers"/>
+    <act shortcut="Shift+Z" name="Hide All Layers"/>
+    <act shortcut="Z" name="Hide Selected Layers"/>
+    <act shortcut="I" name="Identify Features"/>
+    <act shortcut="Shift+M" name="Measure Area"/>
+    <act shortcut="M" name="Measure Line"/>
+    <act shortcut="2" name="Merge Selected Features"/>
+    <act shortcut="W" name="Move Feature(s)"/>
+    <act shortcut="Ctrl+Shift+M" name="Multipart to Singleparts..."/>
+    <act shortcut="Q" name="Node Tool"/>
+    <act shortcut="R" name="Open Attribute Table"/>
+    <act shortcut="T" name="Open Field Calculator..."/>
+    <act shortcut="Space" name="Pan Map"/>
+    <act shortcut="Ctrl+Space" name="Pan Map to Selection"/>
+    <act shortcut="Shift+V" name="Paste style"/>
+    <act shortcut="P" name="Properties..."/>
+    <act shortcut="`" name="Python Console"/>
+    <act shortcut="Meta+Ctrl+S" name="Save for Selected Layer(s)"/>
+    <act shortcut="G" name="Select By Expression..."/>
+    <act shortcut="S" name="Select Feature(s)"/>
+    <act shortcut="Shift+S" name="Select Features by Polygon"/>
+    <act shortcut="Shift+X" name="Show All Layers"/>
+    <act shortcut="" name="Show Bookmarks"/>
+    <act shortcut="X" name="Show Selected Layers"/>
+    <act shortcut="N" name="Snapping Options..."/>
+    <act shortcut="1" name="Split Features"/>
+    <act shortcut="E" name="Toggle Editing"/>
+    <act shortcut="F" name="Zoom to Layer"/>
+    <act shortcut="Ctrl+Shift+Space" name="Zoom to Selection"/>
+</qgsshortcuts>
