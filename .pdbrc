@@ -20,3 +20,9 @@ alias sl s;;l
 # Hack to ignore all following breakpoints
 alias stahp ipdb.set_trace = lambda: None; quit();
 alias qq stahp
+
+# Make coloured diffs (pip install datadiff colorama)
+alias dd from datadiff import diff; from colorama import Fore; print("\n".join({" -": Fore.RED, " +": Fore.GREEN, " @": Fore.MAGENTA, "-": Fore.RED, "+": Fore.GREEN, "@": Fore.MAGENTA}.get(line[:2], Fore.RESET) + line for line in str(diff(%1, %2)).split("\n")));
+
+# Update the globals dict for list comps etc https://github.com/ipython/ipython/issues/62
+alias update globals().update(locals())
