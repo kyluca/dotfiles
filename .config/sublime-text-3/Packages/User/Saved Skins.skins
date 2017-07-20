@@ -1,0 +1,21 @@
+{
+	"Boxy MonoKairu":
+	{
+		"Preferences":
+		{
+			"color_scheme": "Packages/User/MonoKairu.tmTheme",
+			"font_face": "Fira Mono",
+			"font_size": 9,
+			"theme": "Boxy Ocean.sublime-theme"
+		},
+		"SublimeLinter":
+		{
+			"user":
+			{
+				"error_color": "D02000",
+				"gutter_theme": "Packages/Boxy Theme/extras/SublimeLinter/Boxy.gutter-theme",
+				"warning_color": "DDB700"
+			}
+		}
+	}
+}

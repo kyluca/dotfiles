@@ -7,19 +7,18 @@
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_centered": true,
 	"draw_minimap_border": true,
-	"font_face": "FiraMono",
+	"font_face": "Fira Mono",
 	"font_options":
 	[
 		"subpixel_antialias",
 		"gray_antialias"
 	],
-	"font_size": 10,
+	"font_size": 9,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Djaneiro",
-		"Six",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -27,7 +26,7 @@
 		"draw_normal"
 	],
 	"indent_to_bracket": true,
-	"index_workers": 4,
+	"index_workers": 2,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"overlay_scroll_bars": "enabled",
@@ -38,7 +37,7 @@
 	],
 	"show_encoding": true,
 	"show_line_endings": true,
-	"theme": "Boxy Monokai.sublime-theme",
+	"theme": "Boxy Ocean.sublime-theme",
 	"theme_accent_cyan": true,
 	"theme_autocomplete_item_selected_colored": true,
 	"theme_bar": true,
