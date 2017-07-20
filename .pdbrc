@@ -18,8 +18,7 @@ alias nl n;;l
 alias sl s;;l
 
 # Hack to ignore all following breakpoints
-alias stahp ipdb.set_trace = lambda: None; quit();
-alias qq stahp
+alias qq ipdb.set_trace = lambda: None; quit();
 
 # Make coloured diffs (pip install datadiff colorama)
 alias dd from datadiff import diff; from colorama import Fore; print("\n".join({"-": Fore.RED, "+": Fore.GREEN, "@": Fore.MAGENTA}.get(line.strip()[:1], Fore.RESET) + line for line in str(diff(%1, %2)).split("\n")));
