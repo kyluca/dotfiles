@@ -91,8 +91,10 @@ alias l='ls -CF'
 alias lt='ls -ahltFr'
 alias ltt='lt | tail'
 alias lr='ls -ahlFR'
+alias lls='ll -S | h5'
 alias cr='cp -r'
 alias rma='rm -rfv'
+alias rmv='rm -v'
 alias rmac='for f in $(find -name *.pyc -or -name *pycache* -or -name .cache); do rma "$f"; done'
 alias rmab='for f in $(find -name ".tox" -or -name "env" -or -name "env_container" -or -name "build" -or -name "dist" | grep -vE "boost|Compose|footprinter|memegen"); do rma "$f"; done'
 alias gr='grep -rn'
@@ -119,6 +121,8 @@ alias gp='git plog'
 alias guvn='git cm "Update version number between releases"'
 alias gurn='git cm "Update release notes"'
 alias gput='git push && git push --tags'
+alias gpf='git push -f'
+alias gfix='git diff --name-only | uniq | xargs subl'
 alias cdp='cd ~/projects'
 alias pie='pip install -e .'
 alias pir='pip install -r requirements.txt'
@@ -147,7 +151,7 @@ alias gvims='gvim --servername GVIM'
 alias gvimr='gvim --remote-tab'
 
 # function for auto window renaming when changing venvs
-workon_trw() { workon "$@"; trw "$@"; }
+workon_trw () { workon "$@"; trw "$@"; }
 alias wtrw='workon_trw'
 
 # stupid scaling for Atom
@@ -155,6 +159,7 @@ alias wtrw='workon_trw'
 
 # typo catcher
 alias pyhton='python'
+alias py='python'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
