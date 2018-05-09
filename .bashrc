@@ -129,6 +129,7 @@ alias pir='pip install -r requirements.txt'
 alias pirt='pip install -r requirements-test.txt'
 alias pup='pip install -U pip'
 alias pcc='pip install -U pip-conflict-checker && pipconflictchecker'
+alias pua='pip freeze | grep -v "^-e" | xargs pip uninstall -y'
 alias nh='nautilus .'
 alias psd='python setup.py develop'
 alias sar='sudo /etc/init.d/apache2 restart'
@@ -143,16 +144,28 @@ alias camera_on='~/repos/bcwc_pcie/lights_camera_action.sh'
 alias camera_off='echo "Removing the facetimehd module..." && sudo modprobe -r facetimehd'
 alias capacity='cat /sys/class/power_supply/BAT0/capacity'
 alias vpn_login='sudo openvpn ~/openvpn/client.ovpn'
+alias vpn_login_si='sudo openvpn ~/openvpn/client_si.ovpn'
+alias vpn_login_sy='sudo openvpn ~/openvpn/client_sy.ovpn'
+alias vpn_login_nc='sudo openvpn ~/openvpn/client_nc.ovpn'
 alias less='less -N'
+alias tree='tree -I .git'
 alias wttr='curl wttr.in/Brisbane'
 alias vims='vim --servername VIM'
 alias vimr='vim --remote-tab'
 alias gvims='gvim --servername GVIM'
 alias gvimr='gvim --remote-tab'
+alias dcl='docker container ls'
+alias dil='docker images'
+alias dcp='docker container prune'
+alias dip='docker image prune'
+alias ducks='du -cksh * .[!.]* | sort -hr'
 
 # function for auto window renaming when changing venvs
 workon_trw () { workon "$@"; trw "$@"; }
 alias wtrw='workon_trw'
+
+# function for connecting to a host via ssh
+ssh_kyle () { ssh "kyle_connelly@$@.biarrinetworks.com"; }
 
 # stupid scaling for Atom
 # alias atom='atom --force-device-scale-factor=1'
@@ -190,9 +203,10 @@ fi
 export WORKON_HOME=~/virtualenv
 source /usr/local/bin/virtualenvwrapper.sh
 
-export GUROBI_HOME="/opt/gurobi700/linux64"
-export PATH="${PATH}:${GUROBI_HOME}/bin"
-export LD_LIBRARY_PATH="${GUROBI_HOME}/lib"
+export GUROBI_650_HOME="/opt/gurobi650/linux64"
+export GUROBI_700_HOME="/opt/gurobi700/linux64"
+export PATH="${PATH}:${GUROBI_650_HOME}/bin:${GUROBI_700_HOME}/bin"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_650_HOME}/lib:${GUROBI_700_HOME}/lib"
 export CXXFLAGS='-std=c++11'
 export VISUAL="subl -w"
 export EDITOR="subl -w"
