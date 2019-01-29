@@ -16,7 +16,8 @@
             ],
             "disable": false,
             "excludes": [],
-            "executable": "/home/kyle/virtualenv/python3.6/bin/flake8"
+            "executable": "/home/kyle/virtualenv/python3.6/bin/flake8",
+            "ignore_fixables": false
         },
         "json": {
             "disable": false,

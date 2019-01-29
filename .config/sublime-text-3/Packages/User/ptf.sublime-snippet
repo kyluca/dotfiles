@@ -1,7 +1,7 @@
 <snippet>
   <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
-@pytest.fixture
+@pytest.fixture()
 def _fixture():
     pass
 

@@ -147,6 +147,7 @@ alias vpn_login='sudo openvpn ~/openvpn/client.ovpn'
 alias vpn_login_si='sudo openvpn ~/openvpn/client_si.ovpn'
 alias vpn_login_sy='sudo openvpn ~/openvpn/client_sy.ovpn'
 alias vpn_login_nc='sudo openvpn ~/openvpn/client_nc.ovpn'
+alias ag='ag -t'
 alias less='less -N'
 alias tree='tree -I .git'
 alias wttr='curl wttr.in/Brisbane'
@@ -159,6 +160,9 @@ alias dil='docker images'
 alias dcp='docker container prune'
 alias dip='docker image prune'
 alias ducks='du -cksh * .[!.]* | sort -hr'
+alias fnmodeoff='sudo bash -c "echo 1 > /sys/module/hid_apple/parameters/fnmode"'
+alias fnmodeon='sudo bash -c "echo 2 > /sys/module/hid_apple/parameters/fnmode"'
+
 
 # function for auto window renaming when changing venvs
 workon_trw () { workon "$@"; trw "$@"; }

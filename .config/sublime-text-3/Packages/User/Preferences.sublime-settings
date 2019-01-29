@@ -13,7 +13,8 @@
 		"subpixel_antialias",
 		"gray_antialias"
 	],
-	"font_size": 8.9,
+	"font_size": 10,
+	"git_gutter_show_line_annotation": false,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -52,7 +53,7 @@
 	"theme_sidebar_indent_md": true,
 	"theme_sidebar_indent_top_level_disabled": true,
 	"theme_size_xs": true,
-	"theme_statusbar_size_xl": true,
+	"theme_statusbar_size_xxl": true,
 	"theme_tab_highlight_text_only": true,
 	"theme_tab_line_size_lg": true,
 	"theme_tab_selected_label_bold": true,
@@ -61,5 +62,6 @@
 	"theme_tab_size_xl": true,
 	"theme_tab_width_auto": true,
 	"translate_tabs_to_spaces": true,
-	"tree_animation_enabled": false
+	"tree_animation_enabled": false,
+	"ui_scale": 1.5
 }
