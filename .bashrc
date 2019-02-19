@@ -209,8 +209,8 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 export GUROBI_650_HOME="/opt/gurobi650/linux64"
 export GUROBI_700_HOME="/opt/gurobi700/linux64"
-export PATH="${PATH}:${GUROBI_650_HOME}/bin:${GUROBI_700_HOME}/bin"
-export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_650_HOME}/lib:${GUROBI_700_HOME}/lib"
+export PATH="${PATH}${PATH:+:}${GUROBI_650_HOME}/bin:${GUROBI_700_HOME}/bin"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}${LD_LIBRARY_PATH:+:}${GUROBI_650_HOME}/lib:${GUROBI_700_HOME}/lib"
 export CXXFLAGS='-std=c++11'
 export VISUAL="subl -w"
 export EDITOR="subl -w"
