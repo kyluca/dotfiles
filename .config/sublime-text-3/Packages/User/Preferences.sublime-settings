@@ -13,7 +13,7 @@
 		"subpixel_antialias",
 		"gray_antialias"
 	],
-	"font_size": 10,
+	"font_size": 9,
 	"git_gutter_show_line_annotation": false,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
@@ -63,5 +63,5 @@
 	"theme_tab_width_auto": true,
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
-	"ui_scale": 1.5
+	"ui_scale": 1.1
 }
