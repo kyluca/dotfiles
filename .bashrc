@@ -88,95 +88,6 @@ fi
 alias ll='ls -ahlF'
 alias la='ls -A'
 alias l='ls -CF'
-alias lt='ls -ahltFr'
-alias ltt='lt | tail'
-alias lr='ls -ahlFR'
-alias lls='ll -S | h5'
-alias cr='cp -r'
-alias rma='rm -rfv'
-alias rmv='rm -v'
-alias rmac='for f in $(find -name *.pyc -or -name *pycache* -or -name .cache); do rma "$f"; done'
-alias rmab='for f in $(find -name ".tox" -or -name "env" -or -name "env_container" -or -name "build" -or -name "dist" | grep -vE "boost|Compose|footprinter|memegen"); do rma "$f"; done'
-alias gr='grep -rn'
-alias dw='deactivate'
-alias sb='source ~/.bashrc'
-alias sub='subl ~/.bashrc'
-alias sug='subl ~/.gitconfig'
-alias vrc='vims ~/.vimrc'
-alias pt='py.test -vvvs'
-alias ptc='py.test -vvvs --cov=. --cov-report=html --cov-config=tox.ini'
-alias ptv='py.test -vvv'
-alias ptl='py.test -vvvs --tb=line'
-alias ptt='py.test'
-alias ptx='py.test -vvvs --runxfail'
-alias untarbzip='tar -xjvf'
-alias untargzip='tar -xzvf'
-alias h5='head -n 50'
-alias gt='git st'
-alias gd='git diff'
-alias gs='git ds'
-alias gn='git nlog 15'
-alias gna='git nlog 15 --all'
-alias gp='git plog'
-alias guvn='git cm "Update version number between releases"'
-alias gurn='git cm "Update release notes"'
-alias gput='git push && git push --tags'
-alias gpf='git push -f'
-alias gfix='git diff --name-only | uniq | xargs subl'
-alias cdp='cd ~/projects'
-alias pie='pip install -e .'
-alias pir='pip install -r requirements.txt'
-alias pirt='pip install -r requirements-test.txt'
-alias pup='pip install -U pip'
-alias pcc='pip install -U pip-conflict-checker && pipconflictchecker'
-alias pua='pip freeze | grep -v "^-e" | xargs pip uninstall -y'
-alias nh='nautilus .'
-alias psd='python setup.py develop'
-alias sar='sudo /etc/init.d/apache2 restart'
-alias trw='tmux rename-window'
-alias tkp='tmux kill-pane -t'
-alias tkw='tmux kill-window -t'
-alias tks='tmux kill-session -t'
-alias tlsc='tmux lsc -F "#{session_name} [#{client_width}x#{client_height}] #{client_activity_string}"'
-alias kbb='echo 0 | sudo tee -a /sys/class/leds/smc::kbd_backlight/brightness'
-alias edbl='export $(dbus-launch)'
-alias camera_on='~/repos/bcwc_pcie/lights_camera_action.sh'
-alias camera_off='echo "Removing the facetimehd module..." && sudo modprobe -r facetimehd'
-alias capacity='cat /sys/class/power_supply/BAT0/capacity'
-alias vpn_login='sudo openvpn ~/openvpn/client.ovpn'
-alias vpn_login_si='sudo openvpn ~/openvpn/client_si.ovpn'
-alias vpn_login_sy='sudo openvpn ~/openvpn/client_sy.ovpn'
-alias vpn_login_nc='sudo openvpn ~/openvpn/client_nc.ovpn'
-alias ag='ag -t'
-alias less='less -N'
-alias tree='tree -I .git'
-alias wttr='curl wttr.in/Brisbane'
-alias vims='vim --servername VIM'
-alias vimr='vim --remote-tab'
-alias gvims='gvim --servername GVIM'
-alias gvimr='gvim --remote-tab'
-alias dcl='docker container ls'
-alias dil='docker images'
-alias dcp='docker container prune'
-alias dip='docker image prune'
-alias ducks='du -cksh * .[!.]* | sort -hr'
-alias fnmodeoff='sudo bash -c "echo 1 > /sys/module/hid_apple/parameters/fnmode"'
-alias fnmodeon='sudo bash -c "echo 2 > /sys/module/hid_apple/parameters/fnmode"'
-
-
-# function for auto window renaming when changing venvs
-workon_trw () { workon "$@"; trw "$@"; }
-alias wtrw='workon_trw'
-
-# function for connecting to a host via ssh
-ssh_kyle () { ssh "kyle_connelly@$@.biarrinetworks.com"; }
-
-# stupid scaling for Atom
-# alias atom='atom --force-device-scale-factor=1'
-
-# typo catcher
-alias pyhton='python'
-alias py='python'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -202,15 +113,17 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# export PYTHONPATH=~/projects;~/repos
+# function for connecting to a host via ssh
+ssh_kyle () { ssh "kyle_connelly@$@.biarrinetworks.com"; }
 
 export WORKON_HOME=~/virtualenv
 source /usr/local/bin/virtualenvwrapper.sh
 
 export GUROBI_650_HOME="/opt/gurobi650/linux64"
 export GUROBI_700_HOME="/opt/gurobi700/linux64"
-export PATH="${PATH}${PATH:+:}${GUROBI_650_HOME}/bin:${GUROBI_700_HOME}/bin"
-export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}${LD_LIBRARY_PATH:+:}${GUROBI_650_HOME}/lib:${GUROBI_700_HOME}/lib"
+export GUROBI_810_HOME="/opt/gurobi810/linux64"
+export PATH="${PATH}${PATH:+:}${GUROBI_650_HOME}/bin:${GUROBI_700_HOME}/bin:${GUROBI_810_HOME}/bin"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}${LD_LIBRARY_PATH:+:}${GUROBI_650_HOME}/lib:${GUROBI_700_HOME}/lib:${GUROBI_810_HOME}/lib"
 export CXXFLAGS='-std=c++11'
 export VISUAL="subl -w"
 export EDITOR="subl -w"
