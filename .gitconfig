@@ -1,3 +1,6 @@
+[user]
+    name = Kyle Connelly
+    email = <email>
 [core]
     editor = subl -w
     autocrlf = false
@@ -9,13 +12,15 @@
     nlog = log --graph --pretty=format:'%C(yellow)%h %Creset%ad %C(cyan)%an%Cgreen%d %Creset%s' -n
     last = log -1 HEAD
     unstage = reset HEAD --
+    unstagep = reset -p HEAD --
     uncommit = reset --soft HEAD~1
     branches = branch --all
-    st = status
+    st = status --column
     ch = checkout
     rh = reset --hard
     dl = diff HEAD^ HEAD
     ds = diff --cached
+    dsw = diff --cached --color-words
     dw = diff --color-words
     dst = diff --stat HEAD
     ca = commit -am
@@ -26,8 +31,10 @@
     au = add -u
     cma = commit --amend -m
     rf = checkout --
+    rfp = checkout -p --
     psu = push --set-upstream origin
     subi = submodule update --init --recursive
+    pushall = !git remote | xargs -L1 git push --all --verbose
 [push]
     default = simple
 [color]

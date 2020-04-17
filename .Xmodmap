@@ -1,5 +1,6 @@
-! clear current control keys
+! clear current control and super keys
 clear control
+clear mod4
 
 ! set left control back to left control
 keycode  37 = Control_L
@@ -9,3 +10,6 @@ keycode 134 = Control_R
 
 ! update control keys
 add control = Control_L Control_R
+
+! update mod4 keys
+add mod4 = Super_L

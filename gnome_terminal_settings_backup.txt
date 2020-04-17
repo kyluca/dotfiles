@@ -1,0 +1,19 @@
+[legacy]
+menu-accelerator-enabled=false
+
+[legacy/keybindings]
+close-window='<Primary>w'
+
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+audible-bell=true
+background-color='rgb(46,52,54)'
+bold-is-bright=false
+cursor-shape='block'
+default-size-columns=120
+default-size-rows=40
+foreground-color='rgb(211,215,207)'
+palette=['rgb(117,113,94)', 'rgb(249,38,114)', 'rgb(166,226,46)', 'rgb(244,191,117)', 'rgb(102,217,239)', 'rgb(174,129,255)', 'rgb(42,161,152)', 'rgb(249,248,245)', 'rgb(39,40,34)', 'rgb(249,38,114)', 'rgb(166,226,46)', 'rgb(244,191,117)', 'rgb(102,217,239)', 'rgb(174,129,255)', 'rgb(42,161,152)', 'rgb(248,248,242)']
+scrollback-unlimited=true
+use-system-font=true
+use-theme-colors=true
+visible-name='kyle'
