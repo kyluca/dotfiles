@@ -12,6 +12,9 @@ pushd ~/repos/dotfiles
 /usr/bin/cp ~/.Xmodmap ./
 /usr/bin/cp ~/.config/pip/pip.conf ./.config/pip/pip.conf
 
+# Copy powerline configs
+rsync -avr ~/.config/powerline/ ./.config/powerline
+
 # Copy Sublime Text configs except for Package Control caches, just Package Control settings
 rsync -avr --exclude='*Package Control*' ~/.config/sublime-text-3/Packages/User/ ./.config/sublime-text-3/Packages/User
 /usr/bin/cp ~/.config/sublime-text-3/Packages/User/Package\ Control.sublime-settings ./.config/sublime-text-3/Packages/User/Package\ Control.sublime-settings

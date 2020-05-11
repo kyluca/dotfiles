@@ -1,0 +1,25 @@
+{
+	"colors": {
+		"nord:nord0": [0, "2e3440"],
+		"nord:nord1": [1, "3b4252"],
+		"nord:nord2": [2, "434c5e"],
+		"nord:nord3": [3, "4c566a"],
+
+		"nord:nord4": [4, "d8dee9"],
+		"nord:nord5": [5, "e5e9f0"],
+		"nord:nord6": [6, "eceff4"],
+
+		"nord:nord7": [7, "8fbcbb"],
+		"nord:nord8": [8, "88c0d0"],
+		"nord:nord9": [9, "81a1c1"],
+		"nord:nord10": [10, "5e81ac"],
+
+		"nord:nord11": [11, "bf616a"],
+		"nord:nord12": [12, "d08770"],
+		"nord:nord13": [13, "ebcb8b"],
+		"nord:nord14": [14, "a3be8c"],
+		"nord:nord15": [15, "b48ead"]
+
+	},
+	"gradients": {}
+}

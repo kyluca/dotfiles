@@ -192,9 +192,14 @@ LPurple=$'\e[1;35m'
 LCyan=$'\e[1;36m'
 White=$'\e[1;37m'
 
-export PS1_default='${Cyan}\u@\h ${LGray}in ${Green}\w$(__git_ps1 " ${LGray}on ${Brown}%s") ${LGray}@ ${DGray}\t${LGray}\n$ '
-alias ps1_default="export PS1="\$PS1_default""
-ps1_default
+# export PS1_default='${Cyan}\u@\h ${LGray}in ${Green}\w$(__git_ps1 " ${LGray}on ${Brown}%s") ${LGray}@ ${DGray}\t${LGray}\n$ '
+# alias ps1_default="export PS1="\$PS1_default""
+# ps1_default
+
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+. /usr/share/bash/powerline.sh
 
 # Load a default tmux session via tmuxp
-[[ $TERM != "screen-256color" ]] && exec tmuxp load path/to/yaml/files
+[[ $TERM != "tmux-256color" ]] && exec tmuxp load path/to/yaml/files
