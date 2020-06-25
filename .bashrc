@@ -173,24 +173,24 @@ export HISTFILESIZE=10000
 export HISTTIMEFORMAT="%F %T "
 
 # Helper for displaying the git branch in PS1
-source /usr/share/git/completion/git-prompt.sh
+# source /usr/share/git/completion/git-prompt.sh
 
-Black=$'\e[0;30m'
-Red=$'\e[0;31m'
-Green=$'\e[0;32m'
-Brown=$'\e[0;33m'
-Blue=$'\e[0;34m'
-Purple=$'\e[0;35m'
-Cyan=$'\e[0;36m'
-LGray=$'\e[0;37m'
-DGray=$'\e[1;30m'
-LRed=$'\e[1;31m'
-LGreen=$'\e[1;32m'
-Yellow=$'\e[1;33m'
-LBlue=$'\e[1;34m'
-LPurple=$'\e[1;35m'
-LCyan=$'\e[1;36m'
-White=$'\e[1;37m'
+# Black=$'\e[0;30m'
+# Red=$'\e[0;31m'
+# Green=$'\e[0;32m'
+# Brown=$'\e[0;33m'
+# Blue=$'\e[0;34m'
+# Purple=$'\e[0;35m'
+# Cyan=$'\e[0;36m'
+# LGray=$'\e[0;37m'
+# DGray=$'\e[1;30m'
+# LRed=$'\e[1;31m'
+# LGreen=$'\e[1;32m'
+# Yellow=$'\e[1;33m'
+# LBlue=$'\e[1;34m'
+# LPurple=$'\e[1;35m'
+# LCyan=$'\e[1;36m'
+# White=$'\e[1;37m'
 
 # export PS1_default='${Cyan}\u@\h ${LGray}in ${Green}\w$(__git_ps1 " ${LGray}on ${Brown}%s") ${LGray}@ ${DGray}\t${LGray}\n$ '
 # alias ps1_default="export PS1="\$PS1_default""

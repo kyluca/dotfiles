@@ -23,6 +23,9 @@
                 "--strict=true"
             ],
             "excludes": []
+        },
+        "salt-lint": {
+            "executable": "/home/kyle/virtualenv/salt/bin/salt-lint"
         }
     },
     "no_column_highlights_line": false,

@@ -7,6 +7,7 @@
 	[
 		"A File Icon",
 		"AceJump",
+		"ApacheConf",
 		"BracketHighlighter",
 		"CForm",
 		"Dockerfile Syntax Highlighting",
@@ -24,6 +25,7 @@
 		"SnippetMaker",
 		"Statusbar Path",
 		"SublimeLinter",
+		"SublimeLinter-contrib-salt-lint",
 		"SublimeLinter-flake8",
 		"SublimeLinter-json",
 		"Text Pastry",

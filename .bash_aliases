@@ -88,5 +88,9 @@ alias py='python'
 # alias atom='atom --force-device-scale-factor=1'
 
 # function for auto window renaming when changing venvs
-workon_trw () { workon "$@"; trw "$@"; }
-alias wtrw='workon_trw'
+trw_workon () { trw "$@"; workon "$@"; }
+alias workon='trw_workon'
+
+# function for auto window renaming when using ssh
+trw_ssh () { trw "$@"; ssh "$@"; }
+alias ssh='trw_ssh'
