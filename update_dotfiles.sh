@@ -11,7 +11,7 @@ pushd ~/repos/dotfiles
 /usr/bin/cp ~/.tmux.conf ./
 /usr/bin/cp ~/.Xmodmap ./
 /usr/bin/cp ~/.config/pip/pip.conf ./.config/pip/pip.conf
-/usr/bin/cp ~/.config/alacritty/alacritty.conf ./.config/alacritty/alacritty.conf
+/usr/bin/cp ~/.config/alacritty/alacritty.yml ./.config/alacritty/alacritty.yml
 
 # Copy powerline configs
 rsync -avr ~/.config/powerline/ ./.config/powerline
