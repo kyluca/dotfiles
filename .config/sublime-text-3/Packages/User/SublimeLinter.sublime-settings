@@ -26,6 +26,12 @@
         },
         "salt-lint": {
             "executable": "/home/kyle/virtualenv/salt/bin/salt-lint"
+        },
+        "mypy": {
+            "executable": "/home/kyle/virtualenv/orca_cli/bin/mypy",
+            "args": [
+                "--ignore-missing-imports",
+            ],
         }
     },
     "no_column_highlights_line": false,

@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+import pudb; pudb.set_trace()
+]]></content>
+<tabTrigger>pudb</tabTrigger>
+<description>Start pudb</description>
+<scope>source.python, meta.statement.import.python, keyword.control.import.python</scope>
+</snippet>

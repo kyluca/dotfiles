@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+breakpoint()
+]]></content>
+<tabTrigger>bp</tabTrigger>
+<description>Add a breakpoint</description>
+<scope>source.python, meta.function-call.python, meta.qualified-name.python, variable.function.python, support.function.builtin.python</scope>
+</snippet>

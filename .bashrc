@@ -164,8 +164,11 @@ export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}${LD_LIBRARY_PATH:+:}${GUROBI_650_HOME
 export CXXFLAGS='-std=c++11'
 export VISUAL="subl -w"
 export EDITOR="subl -w"
-export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
-export LESS=' -R '
+export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
+export LESS=" -R "
+export JENKINS_USER=""
+export JENKINS_PASS=""
+export PYTHONBREAKPOINT="ipdb.set_trace"
 
 # Bash history
 export HISTSIZE=10000
@@ -199,7 +202,13 @@ export HISTTIMEFORMAT="%F %T "
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
-. /usr/share/bash/powerline.sh
+. /usr/share/powerline/bindings/bash/powerline.sh
+
+function mfa () {
+	  ykprofile=arn:aws:iam::<account_number>:mfa/kyle.connelly
+	  echo "Generating MFA token for ${ykprofile}"
+    echo $(ykman oath accounts code $ykprofile -s) | xsel --clipboard --input
+}
 
 # Load a default tmux session via tmuxp
-[[ $TERM != "tmux-256color" ]] && exec tmuxp load path/to/yaml/files
+[[ $TERM != "tmux-256color" ]] && exec tmuxp load ~/.tmuxp/infra.yaml

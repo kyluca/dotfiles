@@ -1,6 +1,7 @@
 {
 	"common": {
-		"term_truecolor": true
+		"term_truecolor": true,
+		"watcher": "stat"
 	},
 	"ext": {
 		"ipython": {

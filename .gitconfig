@@ -1,6 +1,6 @@
 [user]
     name = Kyle Connelly
-    email = <email>
+    email = kyle.connelly@biarrinetworks.com
 [core]
     editor = subl -w
     autocrlf = false
@@ -44,5 +44,9 @@
     frag = magenta bold
     old = red bold
     new = green bold
+[url "ssh://git@heroku.com/"]
+    insteadOf = https://git.heroku.com/
 [pull]
-	ff = only
+    ff = only
+[init]
+	defaultBranch = master

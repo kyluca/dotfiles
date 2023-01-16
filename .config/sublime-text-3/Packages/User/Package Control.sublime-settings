@@ -19,6 +19,8 @@
 		"Nord",
 		"Package Control",
 		"requirementstxt",
+		"RestructuredText Improved",
+		"Rust Enhanced",
 		"SaltStack-related syntax highlighting and snippets",
 		"SideBarEnhancements",
 		"SimpleAdd",
@@ -28,7 +30,10 @@
 		"SublimeLinter-contrib-salt-lint",
 		"SublimeLinter-flake8",
 		"SublimeLinter-json",
+		"SublimeLinter-mypy",
+		"Terraform",
 		"Text Pastry",
-		"Theme - DAneo"
-	]
+		"Theme - DAneo",
+		"TOML",
+	],
 }

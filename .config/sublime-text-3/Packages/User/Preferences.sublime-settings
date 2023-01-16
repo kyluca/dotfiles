@@ -1,33 +1,41 @@
 {
 	"always_show_minimap_viewport": true,
 	"auto_complete_commit_on_tab": true,
+	"auto_complete_use_index": false,
 	"bold_folder_labels": true,
 	"caret_style": "wide",
 	"color_scheme": "Packages/User/Nordkairu.sublime-color-scheme",
+	// "color_scheme": "Packages/Color Scheme - Default/Breakers.sublime-color-scheme",
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_centered": true,
 	"draw_minimap_border": true,
+	"draw_unicode_white_space": "none",
 	"font_options":
 	[
 		"subpixel_antialias",
 		"gray_antialias"
 	],
+	"font_face": "DroidSansMono Nerd Font Mono",
+	// "font_size": 10,  // for laptop
+	// "font_size": 16,  // for monitor
 	"font_size": 10,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Rust",
+		"Vintage",
 	],
 	"indent_guide_options":
 	[
 		"draw_active"
 	],
 	"indent_to_bracket": true,
+	"index_exclude_patterns": ["*/boost/*"],
 	"index_workers": 2,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"open_files_in_new_window": false,
+	"open_files_in_new_window": "never",
 	"overlay_scroll_bars": "enabled",
 	"preview_on_click": false,
 	"rulers":
@@ -38,8 +46,17 @@
 	"show_line_endings": true,
 	"show_panel_button": false,
 	"show_scroll_tabs_buttons": false,
-	"theme": "DAneo Elegant.sublime-theme",
+	"theme": "DAneo Origin.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
-	"word_wrap": false
+	// "ui_scale": 1.75,
+	"ui_scale": 0.9,
+	"word_wrap": false,
+	"update_check": false,
+	"added_words":
+	[
+		"Biarri",
+		"Biarri’s",
+		"serverless",
+	],
 }
