@@ -152,15 +152,10 @@ fi
 export WORKON_HOME=~/virtualenv
 source /usr/bin/virtualenvwrapper.sh
 
-# Remap keys with xmodmap
-xmodmap ~/.Xmodmap
-
 # Export some things for Gurobi etc
-export GUROBI_650_HOME="/opt/gurobi650/linux64"
-export GUROBI_700_HOME="/opt/gurobi700/linux64"
-export GUROBI_810_HOME="/opt/gurobi810/linux64"
-export PATH="${PATH}${PATH:+:}${GUROBI_650_HOME}/bin:${GUROBI_700_HOME}/bin:${GUROBI_810_HOME}/bin"
-export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}${LD_LIBRARY_PATH:+:}${GUROBI_650_HOME}/lib:${GUROBI_700_HOME}/lib:${GUROBI_810_HOME}/lib"
+export GUROBI_1001_HOME="/opt/gurobi1001/linux64"
+export PATH="${PATH}${PATH:+:}${GUROBI_1001_HOME}/bin"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}${LD_LIBRARY_PATH:+:}${GUROBI_1001_HOME}/lib"
 export CXXFLAGS='-std=c++11'
 export VISUAL="subl -w"
 export EDITOR="subl -w"

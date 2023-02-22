@@ -9,7 +9,6 @@ pushd ~/repos/dotfiles
 /usr/bin/cp ~/.inputrc ./
 /usr/bin/cp ~/.pdbrc ./
 /usr/bin/cp ~/.tmux.conf ./
-/usr/bin/cp ~/.Xmodmap ./
 /usr/bin/cp ~/.config/pip/pip.conf ./.config/pip/pip.conf
 /usr/bin/cp ~/.config/alacritty/alacritty.yml ./.config/alacritty/alacritty.yml
 
@@ -19,7 +18,5 @@ rsync -avr ~/.config/powerline/ ./.config/powerline
 # Copy Sublime Text configs except for Package Control caches, just Package Control settings
 rsync -avr --exclude='*Package Control*' ~/.config/sublime-text/Packages/User/ ./.config/sublime-text/Packages/User
 /usr/bin/cp ~/.config/sublime-text/Packages/User/Package\ Control.sublime-settings ./.config/sublime-text/Packages/User/Package\ Control.sublime-settings
-
-dconf dump /org/gnome/terminal/ > gnome_terminal_settings_backup.txt
 
 popd

@@ -15,10 +15,10 @@
 		"subpixel_antialias",
 		"gray_antialias"
 	],
-	"font_face": "DroidSansMono Nerd Font Mono",
-	// "font_size": 10,  // for laptop
-	// "font_size": 16,  // for monitor
-	"font_size": 10,
+	"font_face": "Hack Nerd Font Mono Regular",
+	// "font_size": 12,  // for laptop
+	// "font_size": 14,  // for monitor
+	"font_size": 14,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -50,7 +50,8 @@
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
 	// "ui_scale": 1.75,
-	"ui_scale": 0.9,
+	// "ui_scale": 0.9,
+	"ui_scale": 1.0,
 	"word_wrap": false,
 	"update_check": false,
 	"added_words":
