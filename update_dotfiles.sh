@@ -17,8 +17,8 @@ pushd ~/repos/dotfiles
 rsync -avr ~/.config/powerline/ ./.config/powerline
 
 # Copy Sublime Text configs except for Package Control caches, just Package Control settings
-rsync -avr --exclude='*Package Control*' ~/.config/sublime-text-3/Packages/User/ ./.config/sublime-text-3/Packages/User
-/usr/bin/cp ~/.config/sublime-text-3/Packages/User/Package\ Control.sublime-settings ./.config/sublime-text-3/Packages/User/Package\ Control.sublime-settings
+rsync -avr --exclude='*Package Control*' ~/.config/sublime-text/Packages/User/ ./.config/sublime-text/Packages/User
+/usr/bin/cp ~/.config/sublime-text/Packages/User/Package\ Control.sublime-settings ./.config/sublime-text/Packages/User/Package\ Control.sublime-settings
 
 dconf dump /org/gnome/terminal/ > gnome_terminal_settings_backup.txt
 
